@@ -1,18 +1,22 @@
-## Getting Started
+## Tipos e Variaveis
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Tipos primitivos
+	- int `4 bytes - Inteiros`
+	- byte `1 byte - Inteiros`
+	- short `2 bytes - Inteiros`
+	- long `8 bytes - Inteiros` - Termina em L
+	- float `Fracionado mais curto` - Termina em F
+	- double `Fracionado mais longo`
+	- boolean `verdadeiro ou falso / 0 ou 1`
+	- char
 
-## Folder Structure
+- Declaração de variáveis
+	- `<Tipo> <nomeVariavel <atribuicaoDeValor>` - A atribuição de valor e opcional nesse caso pois pode ser realizada depois
 
-The workspace contains two folders by default, where:
+- Casting
+	- Em resumo seria a conversão de um tipo para outro para evitar problemas com a quantidade de Bytes
+	- `<Tipo> <nomeVariavel> = (TipoCasting) <nomeVariavel2>`
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Constantes
+	- São reservadas seu valor de forma definitiva pela palavra-chave *final*
+	- `final <Tipo> <NOMEVARIAVEL> <atribuicaoDeValor>`
