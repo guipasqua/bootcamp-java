@@ -1,18 +1,75 @@
-## Getting Started
+# Projeto Smart TV em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é um exercício prático em Java com o objetivo de aplicar conceitos básicos de programação orientada a objetos (POO), como criação de classes, atributos, métodos e interação entre objetos.
 
-## Folder Structure
+O sistema simula o funcionamento básico de uma Smart TV, permitindo ligar/desligar, alterar o volume e mudar de canal através de um usuário.
 
-The workspace contains two folders by default, where:
+## Tecnologias Utilizadas
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Java (JDK 8 ou superior)
+- IDE de sua preferência (IntelliJ, Eclipse, VS Code, etc.)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Estrutura do Projeto
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+src
+├── SmartTv.java
+└── Usuario.java
 
-## Dependency Management
+## Descrição das Classes
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### SmartTv
+
+Classe responsável por representar uma televisão, contendo seus estados e comportamentos.
+
+Atributos:
+- ligada: indica se a TV está ligada ou desligada
+- canal: canal atual da TV
+- volume: volume atual da TV
+
+Métodos:
+- ligar(): liga a TV
+- desligar(): desliga a TV
+- aumentarVolume(): aumenta o volume
+- diminuirVolume(): diminui o volume
+- mudarCanal(int novoCanal): altera o canal da TV
+
+### Usuario
+
+Classe que contém o método main e simula a interação de um usuário com a Smart TV.
+
+Responsabilidades:
+- Criar um objeto SmartTv
+- Exibir o estado inicial da TV
+- Realizar alterações de volume e canal
+- Exibir o estado final da TV
+
+## Como Executar
+
+1. Clone o repositório
+2. Abra o projeto em uma IDE Java
+3. Execute a classe Usuario.java
+4. Observe a saída no console
+
+## Exemplo de Saída
+
+Tv ligada? false
+Canal atual: 1
+Volume atual: 25
+Tv ligada? true
+Volume atual: 26
+Volume atual: 25
+Canal atual: 15
+Tv ligada? true
+Canal atual: 15
+Volume atual: 25
+
+## Possíveis Melhorias
+
+- Encapsular os atributos usando private
+- Criar getters e setters
+- Validar limites de volume e canal
+- Criar um menu interativo com entrada do usuário
+
+## Autor
+
+Guilherme Pasqualetti
